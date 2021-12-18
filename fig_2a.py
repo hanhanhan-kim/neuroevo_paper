@@ -27,6 +27,6 @@ for selecn_by_drift, colour in zip(selecn_by_drifts, colours):
            legend_label=f"{selecn_by_drift}")
     
 p.legend.location = "center_right"
-p.legend.title = "2Ng s ="
+p.legend.title = "2Ne s ="
 
 bokeh.io.show(p)
