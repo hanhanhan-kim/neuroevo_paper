@@ -13,11 +13,11 @@
 
 \title{Evolution as Explanation:  \\The Origins of Neural Codes and their Efficiencies}
 \author[1,\ding{41}]{Han Kim} 
-\author[2]{Bing W. Brunton}
+% \author[2]{Bing W. Brunton}
 \affil[1]{ Division of Biology and Biological Engineering, California Institute of Technology, USA}
-\affil[2]{ Department of Biology, University of Washington, USA}
+% \affil[2]{ Department of Biology, University of Washington, USA}
 \affil[\ding{41}]{ \texttt{hankim@caltech.edu}}
-\date{2021 December 18}
+\date{\today}
 
 
 \twocolumn[
@@ -85,7 +85,7 @@ Evolutionary biologists distinguish between two types of fitness metrics\cite{or
 \subsection{Random forces can dominate evolution} \label{Random forces can dominate evolution}
 From our above definitions of drift and natural selection, we can formulate an expression for evolution that considers the contributions of both non-adaptive and adaptive forces. Given that we can articulate the strength of drift as $\frac{1}{N_e}$, and the strength of natural selection as $s$, we can define their relative contributions as $\frac{\text{selection}}{\text{drift}} = \frac{s}{\frac{1}{N_e}} = N_es$. 
 
-To appreciate the $N_es$ ratio, we must consider a classic case of a diploid population species, such as \textit{Drosophila melanogaster} or \textit{Mus musculus}. In such a species, a given gene might have two possible alleles, \textbf{A} and \textbf{a}, where allele \textbf{A} might have a slight selective advantage, \textit{s}, over \textbf{a}. Given that one allele is advantageous over the other, a worthwhile question that directly relates to our original intents, is to ask under which scenario the advantageous version of the gene, \textbf{A}, will become predominant, or fixate, in the population. In other words, given the selective advantage that \textbf{A} has over \textbf{a}, will natural selection always ensure the fixation of \textbf{A}? The answer to this question is no. Let's say that the mutation rate of \textbf{a $\rightarrow$ A} is $m$ times greater than the mutation rate of \textbf{A $\rightarrow$ a}. If so, then standard population genetics theory\cite{kimura1983neutral, Lynch_2007} argues that the probability of fixing a mutation to \textbf{A} is $e^{2N_es}$ times more likely than fixing a mutation to \textbf{a}. That is, the ratio of probabilities of being \textbf{A} versus \textbf{a} is $me^{2N_es}$. This relationship is particularly interesting, because when $\frac{1}{N_e} \gg |s|$, the probability of fixing \textbf{A} over \textbf{a} in the population approaches exactly the ratio of mutation rates, $m$. That is, when $\frac{1}{N_e} \gg |s|$, or said another way, when the effective population size, $N_e$, is extremely small, then the likelihood of fixation for some advantageous allele is a function of mutation pressures alone. Under small $N_e$, random forces dominate the course of a population's evolution. We can plot this relationship, and observe the effects of altering the $N_es$ ratio (Figure \ref{fig_neutralforces}A). Small $N_es$ ratios result in evolutionary trajectories that are nothing more than the product of mutation rates, a neutral stochastic force. 
+To appreciate the $N_es$ ratio, we must consider a classic case of a diploid population species, such as \textit{Drosophila melanogaster} or \textit{Mus musculus}. In such a species, a given gene might have two possible alleles, \textbf{A} and \textbf{a}, where allele \textbf{A} might have a slight selective advantage, \textit{s}, over \textbf{a}. Given that one allele is advantageous over the other, a worthwhile question that directly relates to our original intents, is to ask under which scenario the advantageous version of the gene, \textbf{A}, will become predominant, or fixate, in the population. In other words, given the selective advantage that \textbf{A} has over \textbf{a}, will natural selection always ensure the fixation of \textbf{A}? The answer to this question is no. Let's say that the mutation rate of \textbf{a $\rightarrow$ A} is $m$ times greater than the mutation rate of \textbf{A $\rightarrow$ a}. If so, then standard population genetics theory\cite{kimura1983neutral, guy_hirsh_2005, Lynch_2007, lynch_hagner_2015, lynch_2020} argues that the probability of fixing a mutation to \textbf{A} is $e^{2N_es}$ times more likely than fixing a mutation to \textbf{a}. That is, the ratio of probabilities of being \textbf{A} versus \textbf{a} is $me^{2N_es}$. This relationship is particularly interesting, because when $\frac{1}{N_e} \gg |s|$, the probability of fixing \textbf{A} over \textbf{a} in the population approaches exactly the ratio of mutation rates, $m$. That is, when $\frac{1}{N_e} \gg |s|$, or said another way, when the effective population size, $N_e$, is extremely small, then the likelihood of fixation for some advantageous allele is a function of mutation pressures alone. Under small $N_e$, random forces dominate the course of a population's evolution. We can plot this relationship, and observe the effects of altering the $N_es$ ratio (Figure \ref{fig_neutralforces}A). Small $N_es$ ratios result in evolutionary trajectories that are nothing more than the product of mutation rates, a neutral stochastic force. 
 
 \subsection{Empirical support for predictions on biological coding inefficiency} \label{Empirical support for predictions on biological coding inefficiency}
 
@@ -159,7 +159,7 @@ The above conception of phenotypes alters when we might appeal to adaptive or no
 
 In this section, we interpret neurobiological results under the above articulated framework. We attempt to demonstrate, via examples, that a knowledge of both non-adaptive and adaptive evolutionary processes better explains the possible origins of neurobiological observations, than an appeal to adaptive processes alone. 
 
-\subsubsection{Two levels of the lobsters stomatogastric ganglion}
+\subsubsection{Two levels of the lobster stomatogastric ganglion}
 
 A clear example of how neutral forces may be more dominant in lower biological levels, but less so for higher phenotypes, can be seen in the lobster stomatogastric ganglion. This ganglion consists of a small and defined network of neurons that fire in a precisely ordered and periodic manner, so that the foregut of the lobster can contract rhythmically, in a so called pyloric rhythm, and enable the lobster's digestion of food. The simulation of more than 20 million biophysical models of the lobster's pyloric rhythm reveals that 20\% of these models can multiply realize the same pyloric-like rhythms. Importantly, these 4 million models, despite realizing the same network activity, were non-similar. Each model comprised of disparate biophysical parameter combinations \cite{prinz_marder_2004}.
 
@@ -201,10 +201,10 @@ Evolution is a complex process. Rarely does it operate exclusively in adaptive o
 
 \newpage
 \section*{Acknowledgements}
-We thank Markus Meister, Joseph Parker, Zitong (Jerry) Wang, Alex Farhang, Kelly Kadlec and Tara Chari for invaluable critical discussions and/or careful readings of the evolving manuscript. HK thanks Markus Meister for teaching Principles of Neural Science (Bi154) at the California Institute of Technology and for encouraging him to share the paper with a broader audience. HK is extremely grateful to Joseph Parker for his invaluable support, trust, and encouragement. HK is supported by the Natural Sciences and Engineering Research Council of Canada's Postgraduate Scholarship. BWB is supported by [TODO]. 
+I thank  Bingni W. Brunton, Markus Meister, Joseph Parker, Zitong (Jerry) Wang, Alex Farhang, Kelly Kadlec and Tara Chari for critical discussions and/or careful readings of the evolving manuscript. I thank Bingni W. Brunton for invaluable conversations and BLT sandwiches. I thank Markus Meister for teaching Principles of Neural Science (Bi154) at the California Institute of Technology and for encouraging him to share the paper with a broader audience. I am extremely grateful to Joseph Parker for his invaluable support, trust, and encouragement. I am supported by the Natural Sciences and Engineering Research Council of Canada's Postgraduate Scholarship. 
 
 \section*{Author contributions}
-Conceptualization: HK. Writing: HK. Editing and review: HK and BWB. Visualization: HK. Supervision: BWB. 
+Conceptualization: HK. Writing: HK. Editing and review: HK. Visualization: HK. 
 
 \section*{Competing interests}
 The authors have no competing interests.
